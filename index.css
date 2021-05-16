@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*reset css end*/
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#e6c107, #504717);
+  font-family: sans-serif;
+}
+
+h1.heading {
+  text-align: center;
+  text-shadow: 5px 5px 5px #111;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #111;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0000ff;
+}
+
+ul {
+  list-style-type: none; 
+  word-break: break-word;
+}
+
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  -ms-flex-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.todo-form {
+  margin: 40px 0px;
+}
+
+.todo-input {
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.add-button {
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+.todo-items {
+  min-width: 350px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.item:first-child {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.delete-button {
+  float: right;
+  background-color: #111;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: white;
+  padding: 2px 7px;
+  font-weight: 550;
+  margin-left: 5px;
+}
+
+.delete-button:hover {
+  background-color: #dc143c;
+  transition: background-color;
+  transition-delay: 0.1s;
+}
+
+.checked { 
+  background-color: #afffaf;
+}
